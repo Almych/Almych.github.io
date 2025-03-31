@@ -1,6 +1,6 @@
 :root {
   --backColor: white;
-  --textColor: black;
+  --textColor: rgb(123, 216, 17);
   --headerFont:200%;
   --mainHeadingFont:4rem;
   --mainDescFont:2rem;
