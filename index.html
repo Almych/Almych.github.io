@@ -1,84 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Landing M1</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Anime World</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#characters">Characters</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+  <!-- Header -->
+  <header>
+      <nav id="Logo">
+          <img src="assets/Header/logo.png" alt="Logo">
+          <p>Applet</p>
         </nav>
-    </header>
-
-    <main>
-        <section id="hero">
-            <h2>Explore Your Favorite Anime</h2>
-            <a href="#about" class="cta-button">Dive In</a>
-        </section>
-
-        <section id="about" class="fade-in">
-            <h2>About Anime</h2>
-            <p>Anime is a style of animation that originated in Japan and has gained popularity worldwide, featuring colorful artwork and vibrant characters.</p>
-        </section>
-
-        <section id="characters" class="fade-in">
-            <h2>Main Characters</h2>
-            <div class="character-list">
-                <div class="character">
-                    <h3>Character 1</h3>
-                    <p>Description of character 1.</p>
-                </div>
-                <div class="character">
-                    <h3>Character 2</h3>
-                    <p>Description of character 2.</p>
-                </div>
-                <div class="character">
-                    <h3>Character 3</h3>
-                    <p>Description of character 3.</p>
-                </div>
-                <div class="character">
-                    <h3>Character 4</h3>
-                    <p>Description of character 4.</p>
-                </div>
+  
+         <nav id="nav-buttons">
+          <a href="#Hero">
+            <button class="desc-text">
+              About
+            </button>
+          </a>
+          <a href="#Projects">
+            <button class="desc-text">
+              Projects
+            </button>
+          </a>
+          <a href="#FAQ">
+            <button class="desc-text">
+              FAQ
+            </button>
+          </a>
+          <a href="#Contact">
+            <button class="desc-text">
+              Contact
+            </button>
+          </a>
+          <a>
+            <button id="toggleButton">
+              <img id="darkModeIcon" src="assets/Header/lightmode.png" alt="Light Mode Icon">
+              </button>
+          </a>
+  
+         </nav>
+  </header>
+  <main>
+      <!-- Hero -->
+      <nav id="Hero">
+          <section class="hero-left">
+              <h1 class="title-text">
+                  Custom Digital Solutions for Ambitious Brands
+              </h1>
+              <p class="desc-text">
+                  Tailoring approaches to unique needs, transforming ideas into exceptional digital experiences
+              </p>
+              <button class="violet-button main-button">Contact us</button>
+              <button class="white-button main-button">Projects</button>
+          </section>
+  
+          <section class="hero-right">
+              <img src="assets/Hero/bg.png" alt="hero image">
+          </section>
+      </nav>
+  
+      <!-- Features -->
+      <nav id="Feature">
+          <nav id="feature-heading">
+              <h2 class="guid-color center-text">Who are we</h2>
+              <h2 class="title-text center-text">Our Guiding Principles</h2>
+              <p class="desc-text center-text">
+                  We focus on what truly matters. Whether shaping workflows, making key decisions, or growing our team, these principles define everything we do.
+              </p>
+          </nav>
+  
+          <nav id="feature-container">
+              <section class="feature-box">
+                  <img src="assets/emoji.png" alt="emoji">
+                  <h3 class="center-text">Empower Our Team</h3>
+                  <p class="center-text">
+                      Recognize what drives our people. Provide the tools and support they need to thrive.
+                  </p>
+              </section>
+  
+              <section class="feature-box">
+                  <img src="assets/heart.png" alt="heart">
+                  <h3 class="center-text">Support and Elevate Each Other</h3>
+                  <p class="center-text">
+                      Collaboration over competition. Growth comes from honesty, respect, and shared success.
+                  </p>
+              </section>
+  
+              <section class="feature-box">
+                  <img src="assets/Stars.png" alt="stars">
+                  <h3 class="center-text">Take Pride in Excellence</h3>
+                  <p class="center-text">
+                      Commit to quality in every project. Deliver nothing but the best—every time.
+                  </p>
+              </section>
+  
+              <section class="feature-box">
+                  <img src="assets/comment.png" alt="comment">
+                  <h3 class="center-text">Put Customers First</h3>
+                  <p class="center-text">
+                      Listen, understand, and exceed expectations. Their success is our success.
+                  </p>
+              </section>
+  
+              <section class="feature-box">
+                  <img src="assets/flags.png" alt="flags">
+                  <h3 class="center-text">Challenge the Impossible</h3>
+                  <p class="center-text">
+                      Embrace complexity. Seek innovation. Boldly ask "What if?" and turn it into "Why not?"
+                  </p>
+              </section>
+  
+              <section class="feature-box">
+                  <img src="assets/scope.png" alt="scope">
+                  <h3 class="center-text">Master the Details</h3>
+                  <p class="center-text">
+                      Excellence is in the little things. Every detail counts in building something remarkable.
+                  </p>
+              </section>
+          </nav>
+          </nav>
+          <!--Slider-->
+          <div id="slider-bar">
+            <div id="slider-box">
+              <!-- Left Side - Text & Review -->
+              <section id="slider-info">
+                <img src="assets/Slider/Stars.png" id="slider-review" alt="Rating Stars">
+                <h2 class="slider-title">
+                  Incredible attention to detail and professionalism.
+                  Our website turned out better than we imagined!
+                </h2>
+                <h1 class="slider-title">- Hanna Saito</h1>
+                <p class="slider-desc">Marketing Director, BrightWave</p>
+              </section>
+          
+              <!-- Right Side - Image -->
+              <section id="slider-image">
+                <img src="assets/Slider/asian.png" alt="Client Image">
+              </section>
             </div>
+          </div>
+          
+   <!--Projects-->
+   <nav id="Projects">
+    <nav title="Heading">
+      <h1 class="guid-color center-text">Latest projects</h1>
+      <h2 class="title-text center-text" >Innovations we`re proud of</h2>
+      <h3 class="desc-text center-text">
+        Explore our protfolio of innovative, tailored solutions delivering exceptional
+        results for out clients.
+      </h3>
+    </nav>
+   </nav>
+
+   <nav id="Projects-bar"> 
+    <nav id="project-container"> 
+
+      <section class="project-box">
+        <img src="assets/Ecommerce.png" alt="project-image"> 
+        <p class="guid-color">Website</p>
+        <section class="project-type">
+          <h1 class="project-title">E-commerce Revolution</h1>
+          <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
         </section>
+        <p class="project-desc">E-commerce Revolution: Built a dynamic store with seamless <br/>payments and recommendations.</p>
+        <p>
+          <span>
+            6 weeks | Nextjs | Stripe API <br/>
+          </span>
+          <span>
+            18 Jan 2024
+          </span> 
+        </p>
+      </section>
 
-        <section id="gallery" class="fade-in">
-            <h2>Gallery</h2>
-            <p>Check out some amazing anime art!</p>
-            <!-- Add images here -->
-             <section id="gallery" class="fade-in">
-    <h2>Gallery</h2>
-    <p>Check out some amazing anime art!</p>
-    <div class="gallery-images">
-        <img src=data:image/jpeg;base64,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 />
-        <img src="https://example.com/image2.jpg" alt="Anime Image 2" />
-        <img src="https://example.com/image3.jpg" alt="Anime Image 3" />
-        <img src="https://example.com/image4.jpg" alt="Anime Image 4" />
-    </div>
-</section>
-
+      <section class="project-box">
+        <img src="assets/remoteProject.jpg" alt="project-image"> 
+        <p class="guid-color">Application</p>
+        <section class="project-type">
+          <h1 class="project-title">EduLearn</h1>
+          <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
         </section>
+        <p class="project-desc">Designed an e-learning platform featuring video lessons,<br/>quizzes, and progress tracking.</p>
+        <p>
+          <span>
+            8 months | React Native | AWS <br/>
+          </span>
+          <span>
+            15 Jan 2025
+          </span> 
+        </p>
+      </section>
 
-        <section id="contact" class="fade-in">
-            <h2>Contact</h2>
-            <p>For inquiries, please reach out at <a href="mailto:info@animeworld.com">info@animeworld.com</a>.</p>
+      <section class="project-box">
+        <img src="assets/googleProject.jpg" alt="project-image"> 
+        <p class="guid-color">Website</p>
+        <section class="project-type">
+          <h1 class="project-title">Urban Ride Hub</h1>
+          <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
         </section>
-    </main>
+        <p class="project-desc">Created a bike rental site with real-time availability,<br/>routes, and membership management.</p>
+        <p>
+          <span>
+            3 weeks | Angular | Google Maps <br/>
+          </span>
+          <span>
+            20 Apr 2022
+          </span> 
+        </p>
+      </section>
+    </nav>
+    <section id="view-projects">
+      <a href="projects.html"> <button class="violet-button main-button">View all projects</button></a>
+    </section>
+  </nav>
+  
+  <!--Questions-->
+  <nav id="FAQ">
+    <h1 class="title-text center-text">Frequently asked questions</h1>
+    <p class="desc-text center-text">Answers to the most common questions about our services and processes.</p>
+  </nav>
+  <nav class="faq-container">
+      <section class="faq-question">
+        <details>
+          <summary class="faq-title">Do you develop both websites and mobile apps?</summary>
+          <p class="faq-desc">Yes, we specialize both websites and mobile applications.
+            Our team ensures that each projects is tailored to meet your business goals,
+            whether it is a website, a web application, or a mobile app for iOS and Android.
+          </p>
+        </details>
+        <section class="faq-box">
+          <img src="assets/plus.png" alt="plus">
+          <img src="assets/minus.png" alt="plus">
+        </section>
+      </section>
 
-    <footer>
-        <p>&copy; 2024 Anime World. All rights reserved.</p>
-    </footer>
+      <section class="faq-question">
+        <details>
+          <summary class="faq-title">How long it take to develop a project?</summary>
+          <p class="faq-desc">
+            If you pay more we make it faster as we can, but if you a jew we make it after jesus come back.
+          </p>
+        </details>
+        <section class="faq-box">
+          <img src="assets/plus.png" alt="plus">
+          <img src="assets/minus.png" alt="plus">
+        </section>
+      </section>
 
-    <script src="script.js"></script>
+    <section class="faq-question">
+      <details>
+        <summary class="faq-title">What technologies do you use?</summary>
+        <p class="faq-desc">
+          React Native, Google Maps, Angular, Next.js, London men. 
+        </p>
+      </details>
+      <section class="faq-box">
+        <img src="assets/plus.png" alt="plus">
+        <img src="assets/minus.png" alt="plus">
+      </section>
+    </section>
+
+    <section class="faq-question">
+      <details>
+        <summary class="faq-title">Can you redesign an existing website or app?</summary>
+        <p class="faq-desc">
+         Sure, give us money first bro.
+        </p>
+      </details>
+      <section class="faq-box">
+        <img src="assets/plus.png" alt="plus">
+        <img src="assets/minus.png" alt="plus">
+      </section>
+    </section>
+
+    <section class="faq-question">
+      <details>
+        <summary class="faq-title">Do you provide post-launch support?</summary>
+        <p class="faq-desc">
+          No, only love support.
+        </p>
+      </details>
+      <section class="faq-box">
+        <img src="assets/plus.png" alt="plus">
+        <img src="assets/minus.png" alt="plus">
+      </section>
+    </section>
+    
+    <section class="faq-question">
+      <details>
+        <summary class="faq-title">How do I get quote for my project?</summary>
+        <p class="faq-desc">
+          Never or soon!
+        </p>
+      </details>
+      <section class="faq-box">
+        <img src="assets/plus.png" alt="plus">
+        <img src="assets/minus.png" alt="plus">
+      </section>
+    </section>
+
+  </nav>
+  <!--Contact-->
+  <nav id="Contact">
+    <section title="Head">
+      <p class="guid-color">Contact us</p>
+      <summary class="title-text">Lets build something great together</summary>
+      <p class="desc-text">Have a project in mind, and lets build your ideas to life.</p>
+    </section>
+    <nav id="contact-container">
+      <section class="contact-box">
+        <img src="assets/comment.png" alt="comment">
+        <section class="contact-info">
+          <summary class="faq-title">Emails us</summary>
+          <p class="desc-text">For inquries, contact us.</p>
+          <p class="guid-color">info@applet.com</p>
+        </section>
+      </section>
+      <section class="contact-box">
+        <img src="assets/comments.png" alt="comments">
+        <section class="contact-info">
+          <summary class="faq-title">Chat with us</summary>
+        <p class="desc-text">Get quick replies.</p>
+        <p class="guid-color">support@applet.com</p>
+        </section>
+      </section>
+      <section class="contact-box">
+        <img src="assets/location.png" alt="location">
+        <section class="contact-info">
+          <summary class="faq-title">Visit us</summary>
+          <p class="desc-text">Visit us office HQ.</p>
+          <p class="guid-color">123 Innovation Street, <br/> San Francisco, CA 94105</p>
+        </section>
+      </section>
+      <section class="contact-box">
+        <img src="assets/phone.png" alt="phone">
+        <section class="contact-info">
+          <summary class="faq-title">Call us</summary>
+        <p class="desc-text">Mon-Fri, 9 AM - 6 PM.</p>
+        <p class="guid-color">1 (415) 123-4567</p>
+        </section>
+      </section>
+    </nav>
+</nav>
+ </main>
+ <!--Footer-->
+ <footer>
+  <nav class="footer-bar">
+    <hr>
+    <nav id="end-bar">
+      <p id="coopyright" class="slider-desc">@ 2025 Applet. All rights reserved.</p>
+      <section id="icons">
+        <button>
+          <img src="assets/x.png" alt="x-icon">
+        </button>
+        <button>
+          <img src="assets/linkedin.png" alt="linkedin">
+        </button>
+        <button>
+          <img src="assets/facebook.png" alt="facebook">
+        </button>
+        <button>
+          <img src="assets/github.png" alt="github">
+        </button>
+      </section>
+    </nav>
+  </nav>
+</footer>
 </body>
 </html>
