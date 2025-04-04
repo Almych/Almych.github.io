@@ -9,72 +9,63 @@
 <body>
   <!-- Header -->
   <header>
-      <nav id="Logo">
-          <img src="assets/Header/logo.png" alt="Logo">
-          <p>Applet</p>
-        </nav>
-        <section id="navigation">
-          <nav id="nav-buttons">
-              <a href="#Hero">
-                  <button class="desc-text">
-                      About
-                  </button>
-              </a>
-              <a href="#Projects">
-                  <button class="desc-text">
-                      Projects
-                  </button>
-              </a>
-              <a href="#FAQ">
-                  <button class="desc-text">
-                      FAQ
-                  </button>
-              </a>
-              <a href="#Contact">
-                  <button class="desc-text">
-                      Contact
-                  </button>
-              </a>
-                  <label for="toggle-button">
-                      <input type="checkbox" id="toggle-button">
-                      <img id="darkModeIcon" src="assets/Header/lightmode.png" alt="Light Mode Icon">
-                      <img id="lightModeIcon" src="assets/Header/darkmode.png" alt="Dark Mode Icon">
-                  </label>
-          </nav>
-      
-          <nav id="burger-menu">
-              <img src="assets/_Pagination dot indicator-1.png" alt="burger">
-          </nav>
+    <nav id="nav-bar">
+      <section id="Logo">
+        <img src="assets/Header/logo.png" alt="Logo">
+        <p>Applet</p>
       </section>
-      
+      <section id="navigation">
+        <nav id="nav-buttons">
+            <a href="#Feature"><button class="desc-text">About</button></a>
+            <a href="#Projects"><button class="desc-text">Projects</button></a>
+            <a href="#FAQ"><button class="desc-text">FAQ</button></a>
+            <a href="#Contacts"><button class="desc-text">Contacts</button></a>
+                <label for="toggle-button">
+                    <input type="checkbox" id="toggle-button">
+                    <img id="darkModeIcon" src="assets/Header/lightmode.png" alt="Light Mode Icon">
+                    <img id="lightModeIcon" src="assets/Header/darkmode.png" alt="Dark Mode Icon">
+                </label>
+        </nav>
+    
+        <nav id="burger-menu">
+            <img src="assets/_Pagination dot indicator-1.png" alt="burger">
+        </nav>
+    </section>
+    </nav>  
   </header>
   <main>
       <!-- Hero -->
       <nav id="Hero">
-          <section class="hero-left">
+        <section id="hero-container">
+          <section class="hero-info">
+            <section class="hero-heading">
               <h1 class="title-text">
-                  Custom Digital Solutions for Ambitious Brands
-              </h1>
-              <p class="desc-text">
-                  Tailoring approaches to unique needs, transforming ideas into exceptional digital experiences
-              </p>
+                Custom Digital Solutions <br/> for Ambitious Brands
+            </h1>
+            <p class="desc-text">Tailoring approaches to unique needs, transforming ideas <br/> into exceptional digital experiences</p>
+            </section>
+            <section id="hero-buttons">
               <button class="violet-button main-button">Contact us</button>
               <button class="white-button main-button">Projects</button>
+            </section>
           </section>
   
-          <section class="hero-right">
+          <section class="hero-image">
               <img src="assets/Hero/bg.png" alt="hero image">
           </section>
+        </section>
       </nav>
   
       <!-- Features -->
       <nav id="Feature">
-          <nav id="feature-heading">
+          <nav id="feature-title">
+            <section id="feature-heading">
               <h2 class="guid-color center-text">Who are we</h2>
               <h2 class="title-text center-text">Our Guiding Principles</h2>
               <p class="desc-text center-text">
-                  We focus on what truly matters. Whether shaping workflows, making key decisions, or growing our team, these principles define everything we do.
+                  We focus on what truly matters. Whether shaping workflows, making key <br/> decisions, or growing our team, these principles define everything we do.<br/>
               </p>
+            </section>
           </nav>
   
           <nav id="feature-container">
@@ -128,25 +119,28 @@
           </nav>
           </nav>
           <!--Slider-->
-          <div id="slider-bar">
-            <div id="slider-box">
+          <nav id="Slider-bar">
+            <nav id="slider-box">
               <!-- Left Side - Text & Review -->
               <section id="slider-info">
-                <img src="assets/Slider/Stars.png" id="slider-review" alt="Rating Stars">
+                <section id="slider-heading">
+                  <img src="assets/Slider/Stars.png" alt="Rating Stars">
                 <h2 class="slider-title">
                   Incredible attention to detail and professionalism.
                   Our website turned out better than we imagined!
                 </h2>
                 <h1 class="slider-title">- Hanna Saito</h1>
                 <p class="slider-desc">Marketing Director, BrightWave</p>
+                <img src="assets/Pagination dot group.png" alt="padination">
+                </section>
               </section>
           
               <!-- Right Side - Image -->
               <section id="slider-image">
                 <img src="assets/Slider/asian.png" alt="Client Image">
               </section>
-            </div>
-          </div>
+            </nav>
+          </nav>
           
    <!--Projects-->
    <nav id="Projects">
@@ -216,7 +210,7 @@
         </section>
       </section>
       <section id="view-projects">
-        <a href="projects.html"> <button class="violet-button main-button">View all projects</button></a>
+        <a href="projects.html"><button class="violet-button main-button">View all projects</button></a>
       </section>
     </nav>
    </nav>
@@ -225,89 +219,95 @@
   
   <!--Questions-->
   <nav id="FAQ">
-    <h1 class="title-text center-text">Frequently asked questions</h1>
-    <p class="desc-text center-text">Answers to the most common questions about our services and processes.</p>
-  </nav>
-  <nav class="faq-container">
-      <section class="faq-question">
-        <details>
-          <summary class="faq-title">Do you develop both websites and mobile apps?</summary>
-          <p class="faq-desc">Yes, we specialize both websites and mobile applications.
-            Our team ensures that each projects is tailored to meet your business goals,
-            whether it is a website, a web application, or a mobile app for iOS and Android.
-          </p>
-        </details>
-        <section class="faq-box">
-          <img src="assets/plus.png" alt="plus">
-          <img src="assets/minus.png" alt="plus">
+    <section id="faq-heading">
+      <h1 class="title-text center-text">Frequently asked questions</h1>
+      <p class="desc-text center-text">Answers to the most common questions about our services and processes.</p>
+    </section>
+    <section class="faq-container">
+      <section class="faq-box">
+        <section class="faq-underline">
+          <hr />
+        </section>
+        <section class="faq-question">
+          <details>
+            <summary class="faq-title">Do you develop both websites and mobile apps?</summary>
+            <p class="faq-desc">Yes, we specialize both websites and mobile applications.
+              Our team ensures that each projects is tailored to meet your business goals,
+              whether it is a website, a web application, or a mobile app for iOS and Android.
+            </p>
+          </details>
+          <section class="faq-status">
+            <img src="assets/plus.png" alt="plus">
+            <img src="assets/minus.png" alt="plus">
+          </section>
         </section>
       </section>
-
+  
+        <section class="faq-question">
+          <details>
+            <summary class="faq-title">How long it take to develop a project?</summary>
+            <p class="faq-desc">
+              If you pay more we make it faster as we can, but if you a jew we make it after jesus come back.
+            </p>
+          </details>
+          <section class="faq-status">
+            <img src="assets/plus.png" alt="plus">
+            <img src="assets/minus.png" alt="plus">
+          </section>
+        </section>
+  
       <section class="faq-question">
         <details>
-          <summary class="faq-title">How long it take to develop a project?</summary>
+          <summary class="faq-title">What technologies do you use?</summary>
           <p class="faq-desc">
-            If you pay more we make it faster as we can, but if you a jew we make it after jesus come back.
+            React Native, Google Maps, Angular, Next.js, London men. 
           </p>
         </details>
-        <section class="faq-box">
+        <section class="faq-status">
           <img src="assets/plus.png" alt="plus">
           <img src="assets/minus.png" alt="plus">
         </section>
       </section>
-
-    <section class="faq-question">
-      <details>
-        <summary class="faq-title">What technologies do you use?</summary>
-        <p class="faq-desc">
-          React Native, Google Maps, Angular, Next.js, London men. 
-        </p>
-      </details>
-      <section class="faq-box">
-        <img src="assets/plus.png" alt="plus">
-        <img src="assets/minus.png" alt="plus">
+  
+      <section class="faq-question">
+        <details>
+          <summary class="faq-title">Can you redesign an existing website or app?</summary>
+          <p class="faq-desc">
+           Sure, give us money first bro.
+          </p>
+        </details>
+        <section class="faq-status">
+          <img src="assets/plus.png" alt="plus">
+          <img src="assets/minus.png" alt="plus">
+        </section>
+      </section>
+  
+      <section class="faq-question">
+        <details>
+          <summary class="faq-title">Do you provide post-launch support?</summary>
+          <p class="faq-desc">
+            No, only love support.
+          </p>
+        </details>
+        <section class="faq-status">
+          <img src="assets/plus.png" alt="plus">
+          <img src="assets/minus.png" alt="plus">
+        </section>
+      </section>
+      
+      <section class="faq-question">
+        <details>
+          <summary class="faq-title">How do I get quote for my project?</summary>
+          <p class="faq-desc">
+            Never or soon!
+          </p>
+        </details>
+        <section class="faq-status">
+          <img src="assets/plus.png" alt="plus">
+          <img src="assets/minus.png" alt="plus">
+        </section>
       </section>
     </section>
-
-    <section class="faq-question">
-      <details>
-        <summary class="faq-title">Can you redesign an existing website or app?</summary>
-        <p class="faq-desc">
-         Sure, give us money first bro.
-        </p>
-      </details>
-      <section class="faq-box">
-        <img src="assets/plus.png" alt="plus">
-        <img src="assets/minus.png" alt="plus">
-      </section>
-    </section>
-
-    <section class="faq-question">
-      <details>
-        <summary class="faq-title">Do you provide post-launch support?</summary>
-        <p class="faq-desc">
-          No, only love support.
-        </p>
-      </details>
-      <section class="faq-box">
-        <img src="assets/plus.png" alt="plus">
-        <img src="assets/minus.png" alt="plus">
-      </section>
-    </section>
-    
-    <section class="faq-question">
-      <details>
-        <summary class="faq-title">How do I get quote for my project?</summary>
-        <p class="faq-desc">
-          Never or soon!
-        </p>
-      </details>
-      <section class="faq-box">
-        <img src="assets/plus.png" alt="plus">
-        <img src="assets/minus.png" alt="plus">
-      </section>
-    </section>
-
   </nav>
   <!--Contact-->
   <nav id="Contact">
