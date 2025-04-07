@@ -8,68 +8,101 @@
 </head>
 <body>
   <header>
-    <nav id="Logo">
+    <nav id="nav-bar">
+      <section id="Logo">
         <img src="assets/Header/logo.png" alt="Logo">
         <p>Applet</p>
-      </nav>
-        <section id="navigation">
-          <nav id="nav-buttons">
-            <a href="#Hero">
-              <button class="desc-text">
-                About
-              </button>
-            </a>
-            <a href="#Projects">
-              <button class="desc-text">
-                Projects
-              </button>
-            </a>
-            <a href="#FAQ">
-              <button class="desc-text">
-                FAQ
-              </button>
-            </a>
-            <a href="#Contact">
-              <button class="desc-text">
-                Contact
-              </button>
-            </a>
-            <a>
-              <button id="toggleButton">
-                <img id="darkModeIcon" src="assets/Header/lightmode.png" alt="Light Mode Icon">
-                </button>
-            </a>
-  
-           </nav>
-  
-           <nav id="burger-menu">
-            <img src="assets/_Pagination dot indicator-1.png" alt="burger">
-           </nav>
-        </section>
-</header>
-      <main>
-        <nav class="center-text">
-          <h1 class="guid-color">Latest projects</h1>
-          <h2 class="title-text">Innovation we are proud of</h2>
-          <p class="desc-text">Explore our portfolio of innovative, tailored solutions delivering exceptional results for our clients.</p>
-      </nav>
-      
-      <nav id="project-filter">
-        <button class="guid-color filter-button active" data-filter="all">View All</button>
-        <button class="guid-color filter-button" data-filter="websites">Websites</button>
-        <button class="guid-color filter-button" data-filter="applications">Applications</button>
-        <div id="filter-underline"></div> 
-    </nav>
+      </section>
+      <section id="navigation">
+        <nav id="nav-buttons">
+            <a href="#Feature"><button class="desc-text">About</button></a>
+            <a href="#Projects"><button class="desc-text">Projects</button></a>
+            <a href="#FAQ"><button class="desc-text">FAQ</button></a>
+            <a href="#Contacts"><button class="desc-text">Contacts</button></a>
+                <label for="toggle-button">
+                    <input type="checkbox" id="toggle-button">
+                    <img id="darkModeIcon" src="assets/Header/lightmode.png" alt="Light Mode Icon">
+                    <img id="lightModeIcon" src="assets/Header/darkmode.png" alt="Dark Mode Icon">
+                </label>
+        </nav>
     
-            <nav id="project-container">
+        <nav id="burger-menu">
+            <img src="assets/_Pagination dot indicator-1.png" alt="burger">
+        </nav>
+    </section>
+    </nav>  
+  </header>
+      <main>
+        <nav id="Projects">
+          <nav title="Heading">
+            <h1 class="guid-color center-text">Latest projects</h1>
+            <h2 class="title-text center-text" >Innovations we`re proud of</h2>
+            <h3 class="desc-text center-text">
+              Explore our protfolio of innovative, tailored solutions delivering exceptional
+              results for out clients.
+            </h3>
+          </nav>
+          <section id="projects-filter-wrapper">
+            <section id="projects-filter">
+              <button class="filter-btn active guid-color">View All</button>
+              <button class="filter-btn guid-color">Websites</button>
+              <button class="filter-btn guid-color">Applications</button>
+            </section>
+            <section class="filter-underline-track">
+              <hr class="filter-base-line">
+              <section id="moving-underline"></section>
+            </section>
+          </section>
+          
+          
+          </section>
+          <nav id="Projects-bar"> 
+            <section id="project-container"> 
+        
               <section class="project-box">
-                <img src="assets/google project.jpg" alt="urban">
+                <img src="assets/Ecommerce.png" alt="project-image"> 
+                <p class="guid-color">Website</p>
+                <section class="project-type">
+                  <h1 class="project-title">E-commerce Revolution</h1>
+                  <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
+                </section>
+                <p class="project-desc">E-commerce Revolution: Built a dynamic store with seamless <br/>payments and recommendations.</p>
+                <p>
+                  <span>
+                    6 weeks | Nextjs | Stripe API <br/>
+                  </span>
+                  <span>
+                    18 Jan 2024
+                  </span> 
+                </p>
+              </section>
+        
+              <section class="project-box">
+                <img src="assets/remoteProject.jpg" alt="project-image"> 
+                <p class="guid-color">Application</p>
+                <section class="project-type">
+                  <h1 class="project-title">EduLearn</h1>
+                  <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
+                </section>
+                <p class="project-desc">Designed an e-learning platform featuring video lessons,<br/>quizzes, and progress tracking.</p>
+                <p>
+                  <span>
+                    8 months | React Native | AWS <br/>
+                  </span>
+                  <span>
+                    15 Jan 2025
+                  </span> 
+                </p>
+              </section>
+        
+              <section class="project-box">
+                <img src="assets/googleProject.jpg" alt="project-image"> 
                 <p class="guid-color">Website</p>
                 <section class="project-type">
                   <h1 class="project-title">Urban Ride Hub</h1>
                   <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
                 </section>
-                <p class="project-desc">Created a bike rental site with real-time availability, routes, and membership management</p>
+                <p class="project-desc">Created a bike rental site with real-time availability,<br/>routes, and membership management.</p>
                 <p>
                   <span>
                     3 weeks | Angular | Google Maps <br/>
@@ -78,110 +111,48 @@
                     20 Apr 2022
                   </span> 
                 </p>
+              </section>
+
+              <section class="project-box">
+                <img src="assets/googleProject.jpg" alt="project-image"> 
+                <p class="guid-color">Website</p>
+                <section class="project-type">
+                  <h1 class="project-title">Urban Ride Hub</h1>
+                  <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
+                </section>
+                <p class="project-desc">Created a bike rental site with real-time availability,<br/>routes, and membership management.</p>
+                <p>
+                  <span>
+                    3 weeks | Angular | Google Maps <br/>
+                  </span>
+                  <span>
+                    20 Apr 2022
+                  </span> 
+                </p>
+              </section>
+
+
+               <section class="project-box">
+                <img src="assets/googleProject.jpg" alt="project-image"> 
+                <p class="guid-color">Website</p>
+                <section class="project-type">
+                  <h1 class="project-title">Urban Ride Hub</h1>
+                  <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
+                </section>
+                <p class="project-desc">Created a bike rental site with real-time availability,<br/>routes, and membership management.</p>
+                <p>
+                  <span>
+                    3 weeks | Angular | Google Maps <br/>
+                  </span>
+                  <span>
+                    20 Apr 2022
+                  </span> 
+                </p>
+              </section>
+
             </section>
-                <section class="project-box">
-                  <img src="assets/google project.jpg" alt="urban">
-                  <p class="guid-color">Website</p>
-                  <section class="project-type">
-                    <h1 class="project-title">Urban Ride Hub</h1>
-                    <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
-                  </section>
-                  <p class="project-desc">Created a bike rental site with real-time availability, routes, and membership management</p>
-                  <p>
-                    <span>
-                      3 weeks | Angular | Google Maps <br/>
-                    </span>
-                    <span>
-                      20 Apr 2022
-                    </span> 
-                  </p>
-              </section>
-                <section class="project-box">
-                  <img src="assets/google project.jpg" alt="urban">
-                  <p class="guid-color">Website</p>
-                  <section class="project-type">
-                    <h1 class="project-title">Urban Ride Hub</h1>
-                    <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
-                  </section>
-                  <p class="project-desc">Created a bike rental site with real-time availability, routes, and membership management</p>
-                  <p>
-                    <span>
-                      3 weeks | Angular | Google Maps <br/>
-                    </span>
-                    <span>
-                      20 Apr 2022
-                    </span> 
-                  </p>
-              </section>
-                <section class="project-box">
-                  <img src="assets/google project.jpg" alt="urban">
-                  <p class="guid-color">Website</p>
-                  <section class="project-type">
-                    <h1 class="project-title">Urban Ride Hub</h1>
-                    <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
-                  </section>
-                  <p class="project-desc">Created a bike rental site with real-time availability, routes, and membership management</p>
-                  <p>
-                    <span>
-                      3 weeks | Angular | Google Maps <br/>
-                    </span>
-                    <span>
-                      20 Apr 2022
-                    </span> 
-                  </p>
-              </section>
-                <section class="project-box">
-                  <img src="assets/google project.jpg" alt="urban">
-                  <p class="guid-color">Website</p>
-                  <section class="project-type">
-                    <h1 class="project-title">Urban Ride Hub</h1>
-                    <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
-                  </section>
-                  <p class="project-desc">Created a bike rental site with real-time availability, routes, and membership management</p>
-                  <p>
-                    <span>
-                      3 weeks | Angular | Google Maps <br/>
-                    </span>
-                    <span>
-                      20 Apr 2022
-                    </span> 
-                  </p>
-              </section>
-                <section class="project-box">
-                    <img src="assets/google project.jpg" alt="urban">
-                    <p class="guid-color">Website</p>
-                    <section class="project-type">
-                      <h1 class="project-title">Urban Ride Hub</h1>
-                      <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
-                    </section>
-                    <p class="project-desc">Created a bike rental site with real-time availability, routes, and membership management</p>
-                    <p>
-                      <span>
-                        3 weeks | Angular | Google Maps <br/>
-                      </span>
-                      <span>
-                        20 Apr 2022
-                      </span> 
-                    </p>
-                </section>
-                <section class="project-box">
-                    <img src="assets/google project.jpg" alt="urban">
-                    <p class="guid-color">Website</p>
-                    <section class="project-type">
-                      <h1 class="project-title">Urban Ride Hub</h1>
-                      <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
-                    </section>
-                    <p class="project-desc">Created a bike rental site with real-time availability, routes, and membership management</p>
-                    <p>
-                      <span>
-                        3 weeks | Angular | Google Maps <br/>
-                      </span>
-                      <span>
-                        20 Apr 2022
-                      </span> 
-                    </p>
-                </section>
-            </nav>
+          </nav>
+         </nav>
       </main>
       <footer>
         <nav class="footer-bar">
