@@ -10,7 +10,7 @@
   --faq-font:2em;
   --project-title:1.5rem;
   --project-desc:1rem;
-  --violet-text:2.5em;
+  --violet-text:2em;
   --hero-main-font:7.5em;
   --hero-img-width:2.5em;
   --feature-desc-font:2em;
@@ -311,43 +311,6 @@ input[type="checkbox"] {
 
 
 
-@media screen and (max-width: 600px) {
-  #hero-buttons {
-    flex-direction: column;
-  }
-  .hero-image {
-    display: none;
-  }
-  :root {
-    --hero-main-font:2.4em;
-    --logo-font:1.5em;
-    --mainDescFont: 1.5em;
-    --feature-desc-font:1.5em;
-    --violet-text:1.2em;
-    --mainHeadingFont:2em;
-    --faq-font:1rem;
-  }
-  .hero-heading {
-    width: 100%;
-  }
-  .main-button {
-    padding: 1em 0;
-    border-radius: 2%;
-    font-size: 1em;
-  }
-  #feature-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-
-  .feature-box img {
-    width: 4em;
-  }
-
-
-}
-
-
 /*Slider section*/
 #Slider-bar {
   display: flex;
@@ -365,6 +328,7 @@ input[type="checkbox"] {
   background-color: var(--darkVioletColor);
   border-top-left-radius: 3%;
   border-bottom-left-radius: 3%;
+
 }
 
 .slider-heading {
@@ -373,6 +337,9 @@ input[type="checkbox"] {
   justify-items: flex-start;
   padding: 10% 15%;
   gap: 10px;
+  width: 80%;
+  height:auto;
+  flex: 1;
 }
 
 .slider-heading:hover {
@@ -471,6 +438,10 @@ input[type="checkbox"] {
   #slider-page img {
     width: 1em;
   }
+  
+#reviews {
+  width: 8em;
+ }
 
   .slider-title {
   font-size: 2em;
@@ -794,3 +765,40 @@ footer hr {
     align-items: center;
   }
 }
+
+@media screen and (max-width: 600px) {
+  #hero-buttons {
+    flex-direction: column;
+  }
+  .hero-image {
+    display: none;
+  }
+  :root {
+    --hero-main-font:2.4em;
+    --logo-font:1.5em;
+    --mainDescFont: 1.5em;
+    --feature-desc-font:1.5em;
+    --violet-text:1.2em;
+    --mainHeadingFont:2em;
+    --faq-font:1rem;
+  }
+  .hero-heading {
+    width: 100%;
+  }
+  .main-button {
+    padding: 1em 0;
+    border-radius: 2%;
+    font-size: 1em;
+  }
+  #feature-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+  .feature-box img {
+    width: 4em;
+  }
+
+
+}
+
