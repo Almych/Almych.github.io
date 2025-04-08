@@ -370,7 +370,7 @@ input[type="checkbox"] {
 .slider-heading {
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-items: flex-start;
   padding: 10% 15%;
   gap: 10px;
 }
