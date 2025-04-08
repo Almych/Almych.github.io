@@ -11,15 +11,15 @@
     <nav id="nav-bar">
       <section id="Logo">
         <img src="assets/Header/logo.png" alt="Logo">
-        <p>Applet</p>
+        <a href="#Hero" class="logo-font">Applet</a>
       </section>
       <section id="navigation">
         <nav id="nav-buttons">
-            <a href="#Feature"><button class="desc-text">About</button></a>
-            <a href="#Projects"><button class="desc-text">Projects</button></a>
-            <a href="#FAQ"><button class="desc-text">FAQ</button></a>
-            <a href="#Contacts"><button class="desc-text">Contacts</button></a>
-                <label for="toggle-button">
+          <a href="index.html" class="desc-text">About</a>
+            <a href="index.html" class="desc-text">Projects</a>
+            <a href="index.html" class="desc-text">FAQ</a>
+            <a href="index.html/" class="desc-text">Contacts</a>
+                <label>
                     <input type="checkbox" id="toggle-button">
                     <img id="darkModeIcon" src="assets/Header/lightmode.png" alt="Light Mode Icon">
                     <img id="lightModeIcon" src="assets/Header/darkmode.png" alt="Dark Mode Icon">
@@ -27,7 +27,7 @@
         </nav>
     
         <nav id="burger-menu">
-            <img src="assets/_Pagination dot indicator-1.png" alt="burger">
+            <button><img src="assets/burger.png" alt="burger"></button>
         </nav>
     </section>
     </nav>  
@@ -37,10 +37,10 @@
           <nav title="Heading">
             <h1 class="guid-color center-text">Latest projects</h1>
             <h2 class="title-text center-text" >Innovations we`re proud of</h2>
-            <h3 class="desc-text center-text">
+            <p class="desc-text center-text">
               Explore our protfolio of innovative, tailored solutions delivering exceptional
               results for out clients.
-            </h3>
+            </p>
           </nav>
           <section id="projects-filter-wrapper">
             <section id="projects-filter">
@@ -67,14 +67,14 @@
                   <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
                 </section>
                 <p class="project-desc">E-commerce Revolution: Built a dynamic store with seamless <br/>payments and recommendations.</p>
-                <p>
-                  <span>
+                <article class="project-details">
+                  <p>
                     6 weeks | Nextjs | Stripe API <br/>
-                  </span>
-                  <span>
+                  </p>
+                  <p>
                     18 Jan 2024
-                  </span> 
-                </p>
+                  </p> 
+                </article>
               </section>
         
               <section class="project-box">
@@ -85,14 +85,14 @@
                   <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
                 </section>
                 <p class="project-desc">Designed an e-learning platform featuring video lessons,<br/>quizzes, and progress tracking.</p>
-                <p>
-                  <span>
+                <article class="project-details">
+                  <p>
                     8 months | React Native | AWS <br/>
-                  </span>
-                  <span>
+                  </p>
+                  <p>
                     15 Jan 2025
-                  </span> 
-                </p>
+                  </p> 
+                </article>
               </section>
         
               <section class="project-box">
@@ -103,14 +103,14 @@
                   <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
                 </section>
                 <p class="project-desc">Created a bike rental site with real-time availability,<br/>routes, and membership management.</p>
-                <p>
-                  <span>
+                <article class="project-details">
+                  <p>
                     3 weeks | Angular | Google Maps <br/>
-                  </span>
-                  <span>
+                  </p>
+                  <p>
                     20 Apr 2022
-                  </span> 
-                </p>
+                  </p> 
+                </article>
               </section>
 
               <section class="project-box">
@@ -121,14 +121,14 @@
                   <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
                 </section>
                 <p class="project-desc">Created a bike rental site with real-time availability,<br/>routes, and membership management.</p>
-                <p>
-                  <span>
+                <article class="project-details">
+                  <p>
                     3 weeks | Angular | Google Maps <br/>
-                  </span>
-                  <span>
+                  </p>
+                  <p>
                     20 Apr 2022
-                  </span> 
-                </p>
+                  </p> 
+                </article>
               </section>
 
 
@@ -140,14 +140,14 @@
                   <img src="assets/arrow-up-right.png" alt="arrow" class="arrow-icon">
                 </section>
                 <p class="project-desc">Created a bike rental site with real-time availability,<br/>routes, and membership management.</p>
-                <p>
-                  <span>
+                <article class="project-details">
+                  <p>
                     3 weeks | Angular | Google Maps <br/>
-                  </span>
-                  <span>
+                  </p>
+                  <p>
                     20 Apr 2022
-                  </span> 
-                </p>
+                  </p> 
+                </article>
               </section>
 
             </section>
@@ -158,7 +158,7 @@
         <nav class="footer-bar">
           <hr>
           <nav id="end-bar">
-            <p id="coopyright">@ 2025 Applet. All rights reserved.</p>
+            <p id="coopyright" class="slider-desc">@ 2025 Applet. All rights reserved.</p>
             <section id="icons">
               <button>
                 <img src="assets/x.png" alt="x-icon">
@@ -176,5 +176,6 @@
           </nav>
         </nav>
       </footer>
+      <script src="projects.js"></script>
 </body>
 </html>

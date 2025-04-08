@@ -271,7 +271,7 @@ input[type="checkbox"] {
 
 #feature-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 3em;
   justify-content: center;
   margin: 2% 10%;
@@ -323,7 +323,7 @@ input[type="checkbox"] {
     --logo-font:1.5em;
     --mainDescFont: 1.5em;
     --feature-desc-font:1.5em;
-    --violet-text:1.5em;
+    --violet-text:1.2em;
     --mainHeadingFont:2em;
     --faq-font:1rem;
   }
@@ -348,11 +348,10 @@ input[type="checkbox"] {
 }
 
 
-/*Test section*/
-/* Main container for the slider */
+/*Slider section*/
 #Slider-bar {
   display: flex;
-  margin: 5% 10%;
+  margin: 6% 6%;
   justify-content: center;
 }
 
@@ -368,16 +367,41 @@ input[type="checkbox"] {
   border-bottom-left-radius: 3%;
 }
 
-#slider-heading {
+.slider-heading {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  padding: 15% 15%;
+  padding: 10% 15%;
+  gap: 10px;
 }
 
+.slider-heading:hover {
+  cursor: pointer;
+  transition: 3s;
+  left: 0;
+}
 
-#slider-heading img {
- width: 15em;
+#slider-image > *:hover {
+  cursor: pointer;
+  transition: 3s;
+  left: 0;
+}
+
+#slider-page {
+  display: flex;
+  margin: 0 15%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5%;
+  gap: 3%;
+}
+#slider-page img {
+ width: 3em;
+ border: none;
+}
+
+#reviews {
+ width: 16em;
 }
 
 /* Text Styling */
@@ -391,12 +415,31 @@ input[type="checkbox"] {
   font-size: 2em;
 }
 
+.slider-dot {
+  display: block;
+}
 /* Right Side - Image */
 #slider-image {
   display: flex;
   flex: 1;
 }
 
+#slider-image > *:nth-child(2) {
+  display: none;
+}
+
+#slider-image > *:nth-child(3) {
+  display: none;
+}
+
+
+#slider-info-move > *:nth-child(2) {
+  display: none;
+}
+
+#slider-info-move > *:nth-child(3) {
+  display: none;
+}
 
 #slider-image img {
   width: 100%;
@@ -412,12 +455,9 @@ input[type="checkbox"] {
     flex-direction: column;
   }
 
-  #slider-info, #slider-image {
-    flex: unset;
-    width: 100%;
-    height: auto;
+  #slider-heading  {
+    gap: 0;
   }
-
   #slider-info {
     border-top-right-radius: 3%;
     border-top-left-radius: 3%;
@@ -426,6 +466,10 @@ input[type="checkbox"] {
 
   .slider-desc {
     font-size: 1em;
+  }
+
+  #slider-page img {
+    width: 1em;
   }
 
   .slider-title {
@@ -456,21 +500,25 @@ input[type="checkbox"] {
 #slider-image img {
   border-bottom-left-radius: 3%;
   border-bottom-right-radius: 3%;
+  border-top-right-radius: 0;
 }
+
 }
 
 
 /* Projects */
 
 
-
+#Projects {
+  margin-bottom: 10%;
+}
 
 #project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  gap: 5%;
   padding: 5% 5%;
+  gap: 30px;
 }
 .project-details {
   margin: 0 0;
@@ -480,7 +528,6 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1%;
 }
 
 .project-box img {
@@ -501,7 +548,6 @@ input[type="checkbox"] {
 
 #view-projects {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -514,7 +560,13 @@ input[type="checkbox"] {
   }
 
   #view-projects {
+    margin-left: 3%;
+    margin-right: 3%;
     flex-direction: column;
+  }
+
+  #view-projects button {
+    justify-content: center;
     text-align: center;
   }
 }
@@ -595,7 +647,7 @@ details[open] ~ .faq-status img:last-of-type {
 
 /* Contact section */
 #Contact {
-  padding: 5% 10%;
+  padding: 0 10%;
 }
 
 #contact-container {
@@ -612,7 +664,7 @@ details[open] ~ .faq-status img:last-of-type {
   align-items: flex-start;
   text-align: start;
   padding: 15%;
-  background-color: #bba0f511;
+  background-color: #c9b1fd41;
   transition: transform 0.2s ease;
 }
 
@@ -648,7 +700,7 @@ footer {
 
 #end-bar {
   display: flex;
-  margin: 0 5% 0 5%;
+  margin: 0 5%
 }
 
 
@@ -663,12 +715,17 @@ footer {
   border: none;
 }
 
+#icon button img {
+  width: 100%;
+  height: auto;
+}
+
 footer hr {
  margin: 1% 5% 1% 5%;
 }
 /* Layout */
 #projects-filter-wrapper {
-  margin: 5% 5%;
+  margin: 0 5%;
   position: relative;
 }
 
@@ -704,7 +761,7 @@ footer hr {
   height: 2px;
   bottom: 0;
   background-color: #7f56d9;
-  width: 10%;
+  width: 7%;
   left: 0;
   transition: all 0.3s ease;
 }
@@ -716,7 +773,12 @@ footer hr {
     align-items: center;
   }
   #end-bar {
+    margin: 2% 5%;
     flex-direction: column;
+  }
+
+  .footer-bar {
+    padding-top: 5%;
   }
 
   #icons {

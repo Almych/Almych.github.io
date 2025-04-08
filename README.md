@@ -46,3 +46,43 @@
         <img src="assets/Slider/BlackImage.png">
         <img src="assets/Slider/white.png">
       </section>
+
+      <section id="slider-heading">
+                  <img id="reviews" src="assets/Slider/Stars.png" alt="Rating Stars">
+                  <h2 class="slider-title">
+                  Reliable, efficient, and creative. The best experience we`re had with a development team.
+                </h2>
+                <h1 class="slider-desc">-- Daniel Foster</h1>
+                <p class="slider-desc">Founder, ElevateApps</p>
+                </section>
+
+
+                  <!--
+                  <section id="slider-heading">
+                    <img id="reviews" src="assets/Slider/Stars.png" alt="Rating Stars">
+                    <h2 class="slider-title">
+                    Reliable, efficient, and creative. The best experience we`re had with a development team.
+                  </h2>
+                  <h1 class="slider-desc">-- Daniel Foster</h1>
+                  <p class="slider-desc">Founder, ElevateApps</p>
+                  </section>
+
+                  <section id="slider-heading">
+                    <img id="reviews" src="assets/Slider/Stars.png" alt="Rating Stars">
+                    <h2 class="slider-title">
+                    Incredible attention to detail and professionalism.
+                    Our website turned out better than we imagined!
+                  </h2>
+                  <h1 class="slider-desc">- Hanna Saito</h1>
+                  <p class="slider-desc">Marketing Director, BrightWave</p>
+                  </section>
+
+                  <section id="slider-heading">
+                    <img id="reviews" src="assets/Slider/Stars.png" alt="Rating Stars">
+                    <h2 class="slider-title">
+                    Seamless process and outstanding results! The team exceeded expectations at every day!
+                  </h2>
+                  <h1 class="slider-desc">-- Aoife Gallagher</h1>
+                  <p class="slider-desc">CTO, NexaTech</p>
+                  </section>
+                  -->

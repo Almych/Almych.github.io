@@ -28,7 +28,7 @@
         </nav>
     
         <nav id="burger-menu">
-            <img src="assets/burger.png" alt="burger">
+            <button><img src="assets/burger.png" alt="burger"></button>
         </nav>
     </section>
     </nav>  
@@ -46,7 +46,7 @@
             </section>
             <section id="hero-buttons">
               <button class="violet-button main-button center-text"><a href="#Contact">Contact us</a></button>
-              <button class="white-button main-button center-text"><a href="#Projects">Projects</a></button>
+              <button class="white-button main-button center-text"><a href="projects.html">Projects</a></button>
             </section>
           </section>
   
@@ -121,24 +121,59 @@
           <!--Slider-->
           <nav id="Slider-bar">
             <nav id="slider-box">
-              <!-- Left Side - Text & Review -->
               <section id="slider-info">
-                <section id="slider-heading">
-                  <img src="assets/Slider/Stars.png" alt="Rating Stars">
-                <h2 class="slider-title">
-                  Incredible attention to detail and professionalism.
-                  Our website turned out better than we imagined!
-                </h2>
-                <h1 class="slider-desc">- Hanna Saito</h1>
-                <p class="slider-desc">Marketing Director, BrightWave</p>
+                <article id="slider-info-move">
+                  <section class="slider-heading">
+                    <img id="reviews" src="assets/Slider/Stars.png" alt="Rating Stars">
+                    <h2 class="slider-title">
+                    Incredible attention to detail and professionalism.
+                    Our website turned out better than we imagined!
+                  </h2>
+                  <h1 class="slider-desc">-- Hanna Saito</h1>
+                  <p class="slider-desc">Marketing Director, BrightWave</p>
+                  </section>
 
-                <img src="assets/dots.png" alt="padination">
+                  <section class="slider-heading">
+                    <img id="reviews" src="assets/Slider/Stars.png" alt="Rating Stars">
+                    <h2 class="slider-title">
+                    Reliable, efficient, and creative. The best experience we`re had with a development team.
+                  </h2>
+                  <h1 class="slider-desc">-- Daniel Foster</h1>
+                  <p class="slider-desc">Founder, ElevateApps</p>
+                  </section>
+
+                  <section class="slider-heading">
+                    <img id="reviews" src="assets/Slider/Stars.png" alt="Rating Stars">
+                    <h2 class="slider-title">
+                    Seamless process and outstanding results! The team exceeded expectations at every day!
+                  </h2>
+                  <h1 class="slider-desc">-- Aoife Gallagher</h1>
+                  <p class="slider-desc">CTO, NexaTech</p>
+                  </section>
+                </article>
+
+                <section id="slider-page">
+                  <section class="slider-dot">
+                    <button> <img src="assets/selected dot.png" alt="dot"></button>
+                    <button onclick="moveSlide(1)"> <img src="assets/unselected dot.png" alt="dot"></button>
+                  </section>
+                  <section class="slider-dot">
+                    <button> <img src="assets/selected dot.png" alt="dot"></button>
+                    <button  onclick="moveSlide(2)"> <img src="assets/unselected dot.png" alt="dot"></button>
+                  </section>
+                  <section class="slider-dot">
+                    <button> <img src="assets/selected dot.png" alt="dot"></button>
+                    <button onclick="moveSlide(3)"> <img src="assets/unselected dot.png" alt="dot"></button>
+                  </section>
                 </section>
+
               </section>
           
               <!-- Right Side - Image -->
               <section id="slider-image">
                 <img src="assets/Slider/asian.png" alt="Client Image">
+                <img src="assets/Slider/BlackImage.png" alt="Client Image">
+                <img src="assets/Slider/white.png" alt="Client Image">
               </section>
             </nav>
           </nav>
@@ -156,7 +191,7 @@
       <section id="project-container"> 
   
         <section class="project-box">
-          <img src="assets/Ecommerce.png" alt="project-image"> 
+          <img src="assets/Projects images/Ecommerce.png" alt="project-image"> 
           <p class="guid-color">Website</p>
           <section class="project-type">
             <h1 class="project-title">E-commerce Revolution</h1>
@@ -174,7 +209,7 @@
         </section>
   
         <section class="project-box">
-          <img src="assets/remoteProject.jpg" alt="project-image"> 
+          <img src="assets/Projects images/remoteProject.jpg" alt="project-image"> 
           <p class="guid-color">Application</p>
           <section class="project-type">
             <h1 class="project-title">EduLearn</h1>
@@ -193,7 +228,7 @@
         </section>
   
         <section class="project-box">
-          <img src="assets/googleProject.jpg" alt="project-image"> 
+          <img src="assets/Projects images/googleProject.jpg" alt="project-image"> 
           <p class="guid-color">Website</p>
           <section class="project-type">
             <h1 class="project-title">Urban Ride Hub</h1>
@@ -211,11 +246,13 @@
           </section>
         </section>
       </section>
+
       <section id="view-projects">
-        <button class="violet-button main-button">
-          <a href="projects.html">View all projects</a>
-        </button>
-      </section>
+      <button class="violet-button main-button">
+        <a href="projects.html">View all projects</a>
+      </button>
+    </section>
+    
    </nav>
   
    
@@ -314,7 +351,7 @@
   
     </section>
   </nav>
-
+  <script src="data/utilitis.js"></script>
 
   <!--Contact-->
   <nav id="Contact">
