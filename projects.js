@@ -36,9 +36,7 @@ async function fetchProjects() {
        <p class="project-desc">${article.description}</p>
        <article class="project-details">
                   <p>
-                    ${article.meta.duration_days} | ${article.meta.technologies.forEach(element => {
-                    element.textContent;
-                    })}
+                    ${article.meta.duration_days} | ${article.meta.technologies.map(tech => tech).join(" | ")}
                   </p>
                   <p>
                     ${article.created_at}
