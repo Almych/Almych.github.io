@@ -19,12 +19,13 @@
 
 
 
-body {
+body, html {
   margin: 0;
   padding: 0;
   background-color: var(--backColor);
   color: var(--textColor);
   transition: background-color 0.3s, color 0.3s;
+  overflow-x: hidden;
 }
 
 body p h1 {
@@ -99,6 +100,19 @@ body button:hover  {
   font-weight:bold;
 }
 
+.slider-title {
+  color: var(--whiteColor);
+  font-size: 5em;
+}
+
+.slider-desc {
+  color: var(--whiteColor);
+  font-size: var(--mainDescFont);
+}
+
+.slider-dot {
+  display: block;
+}
 
 
 
@@ -108,12 +122,19 @@ a {
   text-decoration: none;
 }
 
+main {
+  padding: 0;
+  margin: 0;
+}
+
 header img {
   width: var(--hero-img-width);
 }
 
 header {
   position: sticky;
+  width: 100%;
+  right: 0;
   top: 0;
   background-color:#FFFFFF;
   z-index: 3;
@@ -123,12 +144,12 @@ header {
   display: flex;
   align-items: center;
   justify-items: center;
-  margin: 0 5%;
   padding: 2% 0;
 }
 
 
 #navigation {
+  margin: 0 3%;
   display: flex;
   justify-content: flex-end;
   flex: 1;
@@ -147,6 +168,7 @@ header {
   width: var(--logo-font)
 }
 #Logo {
+  margin: 0 5%;
   display: flex;
   flex: 1;
   align-items: center;
@@ -165,6 +187,8 @@ input[type="checkbox"] {
 #toggle-button:checked ~ #darkModeIcon {
   display: none;
 }
+
+/*Burger Menu */
 #burger-menu > * ~ :last-child {
   display: none;
 }
@@ -174,14 +198,12 @@ input[type="checkbox"] {
 }
 
 .side-menu {
-  z-index: 2;
   position: fixed;
-  top: 0;
-  right: 0;
+  z-index: 2;
+  top: 60px;
   width: 100%;
   height: 100%;
   display: flex;
-  padding: 11% 0;
   background-color: #fff; 
   transform: translateX(100%);
   transition: transform 0.3s ease;
@@ -189,27 +211,29 @@ input[type="checkbox"] {
 
 
 
-#side-nav {
+.side-nav {
   display: flex;
   background-color: #FFFFFF;
-  flex: 1;
+  flex: 0 0 80%;
   flex-direction: column;
 }
-
-#side-nav a {
+.sidebar a:focus {
+  background-color:#7F56D9;
+}
+.side-nav a {
   cursor: pointer;
   width: 100%;
   padding: 5% 5%;
   transition: border-left-color 0.3s ease;
 }
 
-#side-nav a:hover {
+.side-nav a:hover {
   background-color:#7F56D9;
 }
 #side-buttons {
-  padding: 3% 3%;
+  padding: 4% 0%;
   gap: 2%;
-  width: 10%;
+  flex: 0 0 20%;
   background-color: #7F56D9;
   align-items: center;
   display: flex;
@@ -225,12 +249,12 @@ input[type="checkbox"] {
 #burger-menu {
   display: none;
 }
-
+/*End of Burger*/
 #lightModeIcon {
   display: none;
 }
 
-/*HERO PART */
+/*HERO PART */  
 #Hero {
   margin-bottom: 5%;
 }
@@ -370,31 +394,45 @@ input[type="checkbox"] {
 #Slider-bar {
   display: flex;
   margin: 5% 5%;
-  justify-content: center;
+  justify-content:center;
 }
 
 #slider-box {
   display: flex;
+  flex: 0 0 60%;
 }
 
-/* Left Side - Text & Review */
+
+/* Right Side - Image */
+#slider-image {
+  display: flex;
+  flex: 0 0 40%;
+}
+
 #slider-info {
-  flex: 1;
+  width: 100%;
+  display: flex;
   background-color: var(--darkVioletColor);
   border-top-left-radius: 3%;
   border-bottom-left-radius: 3%;
+  flex-direction: column;
+}
 
+.slider-title-container {
+  width: 100%;
+}
+
+#slider-info-move {
+  width: 100%;
 }
 
 .slider-heading {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-items: flex-start;
-  padding: 10% 15%;
-  gap: 10px;
-  width: 80%;
-  height:auto;
-  flex: 1;
+  padding: 10% 10%;
+  text-overflow: ellipsis;
 }
 
 .slider-heading:hover {
@@ -411,12 +449,12 @@ input[type="checkbox"] {
 
 #slider-page {
   display: flex;
-  margin: 0 15%;
+  margin: 0 10%;
   justify-content: flex-start;
-  align-items: center;
   margin-bottom: 5%;
   gap: 3%;
 }
+
 #slider-page img {
  width: 3em;
  border: none;
@@ -426,25 +464,6 @@ input[type="checkbox"] {
  width: 16em;
 }
 
-/* Text Styling */
-.slider-title {
-  color: var(--whiteColor);
-  font-size: 4em;
-}
-
-.slider-desc {
-  color: var(--whiteColor);
-  font-size: 2em;
-}
-
-.slider-dot {
-  display: block;
-}
-/* Right Side - Image */
-#slider-image {
-  display: flex;
-  flex: 1;
-}
 
 #slider-image > *:nth-child(2) {
   display: none;
@@ -465,7 +484,6 @@ input[type="checkbox"] {
 
 #slider-image img {
   width: 100%;
-  height: auto;
   object-fit: cover;
   border-top-right-radius: 3%;
   border-bottom-right-radius: 3%;
@@ -473,7 +491,7 @@ input[type="checkbox"] {
 
 /* Responsive Design */
 @media screen and (max-width: 900px) {
-  #slider-box {
+  #Slider-bar {
     flex-direction: column;
   }
 
@@ -499,7 +517,7 @@ input[type="checkbox"] {
  }
 
   .slider-title {
-  font-size: 2em;
+  font-size: 1.8em;
   }
 
   #Contact {
@@ -828,6 +846,10 @@ footer hr {
   .hero-image {
     display: none;
   }
+
+#side-nav a:hover {
+  background-color:#7F56D9;
+}
   :root {
     --hero-main-font:2.4em;
     --logo-font:1.5em;

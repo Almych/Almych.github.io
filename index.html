@@ -39,7 +39,7 @@
 
     <input type="checkbox" id="burger-button" hidden>
 <nav class="side-menu">
-  <section id="side-nav">
+  <section class="side-nav">
     <a href="#Feature" class="desc-text">About</a>
     <a href="#Projects" class="desc-text">Projects</a>
     <a href="#FAQ" class="desc-text">FAQ</a>
@@ -53,7 +53,7 @@
     <button><img src="assets/github.png" alt="github"></button>
 
     <label>
-      <input type="checkbox" id="toggle-button">
+      <input type="checkbox">
       <img id="darkModeIcon" src="assets/Header/lightmode.png" alt="Light Mode Icon">
       <img id="lightModeIcon" src="assets/Header/darkmode.png" alt="Dark Mode Icon">
     </label>
@@ -145,33 +145,41 @@
           </nav>
           <!--Slider-->
           <nav id="Slider-bar">
-            <nav id="slider-box">
+            <section id="slider-box">
               <section id="slider-info">
                 <article id="slider-info-move">
                   <section class="slider-heading">
                     <img id="reviews" src="assets/Slider/Stars.png" alt="Rating Stars">
-                    <h2 class="slider-title">
-                    Incredible attention to detail and professionalism.
-                    Our website turned out better than we imagined!
-                  </h2>
+                    <section class="slider-title-container">
+                      <h2 class="slider-title">
+                        Incredible attention to detail and <br/> professionalism.
+                        Our website turned <br/> out better than we imagined!
+                      </h2>
+                    </section>
                   <h1 class="slider-desc">-- Hanna Saito</h1>
                   <p class="slider-desc">Marketing Director, BrightWave</p>
                   </section>
 
                   <section class="slider-heading">
                     <img id="reviews" src="assets/Slider/Stars.png" alt="Rating Stars">
-                    <h2 class="slider-title">
-                    Reliable, efficient, and creative. The best experience we`re had with a development team.
-                  </h2>
+                    <section class="slider-title-container">
+                      <h2 class="slider-title">
+                        Reliable, efficient, and creative.<br/> 
+                        The best experience we`re had with <br/> a development team.
+                      </h2>
+                    </section>
                   <h1 class="slider-desc">-- Daniel Foster</h1>
                   <p class="slider-desc">Founder, ElevateApps</p>
                   </section>
 
                   <section class="slider-heading">
                     <img id="reviews" src="assets/Slider/Stars.png" alt="Rating Stars">
-                    <h2 class="slider-title">
-                    Seamless process and outstanding results! The team exceeded expectations at every day!
-                  </h2>
+                    <section class="slider-title-container">
+                      <h2 class="slider-title">
+                        Seamless process and outstanding <br/> results! 
+                        The team exceeded <br/> expectations at every day!
+                      </h2>
+                    </section>
                   <h1 class="slider-desc">-- Aoife Gallagher</h1>
                   <p class="slider-desc">CTO, NexaTech</p>
                   </section>
@@ -193,14 +201,12 @@
                 </section>
 
               </section>
-          
-              <!-- Right Side - Image -->
-              <section id="slider-image">
-                <img src="assets/Slider/asian.png" alt="Client Image">
-                <img src="assets/Slider/BlackImage.png" alt="Client Image">
-                <img src="assets/Slider/white.png" alt="Client Image">
-              </section>
-            </nav>
+            </section>
+            <section id="slider-image">
+              <img src="assets/Slider/asian.png" alt="Client Image">
+              <img src="assets/Slider/BlackImage.png" alt="Client Image">
+              <img src="assets/Slider/white.png" alt="Client Image">
+            </section>
           </nav>
           
    <!--Projects-->
