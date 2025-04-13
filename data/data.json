@@ -104,6 +104,18 @@
       },
       "created_at": "12 Jule 2024",
       "image":"assets/Projects images/claeVase.jpg"
+    },
+    {
+      "tag": "Website",
+      "title": "Sheep",
+      "description": "Kusinek",
+      "meta": {
+        "duration_days": 2,
+        "technologies": ["WordPress"],
+        "works": ["Multilingual Support"]
+      },
+      "created_at": "12 Apr 2025",
+      "image":"assets/tiger.png"
     }
   ]
 }

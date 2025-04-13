@@ -116,7 +116,7 @@ header {
   position: sticky;
   top: 0;
   background-color:#FFFFFF;
-  z-index: 2;
+  z-index: 3;
 }
 
 #nav-bar {
@@ -158,13 +158,68 @@ input[type="checkbox"] {
   display: none;
 }
 
-
 #toggle-button:checked ~#lightModeIcon {
   display: inline;
 }
 
 #toggle-button:checked ~ #darkModeIcon {
   display: none;
+}
+#burger-menu > * ~ :last-child {
+  display: none;
+}
+#burger-menu {
+  margin: 0 5%;
+  display: none;
+}
+
+.side-menu {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 11% 0;
+  background-color: #fff; 
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+
+
+#side-nav {
+  display: flex;
+  background-color: #FFFFFF;
+  flex: 1;
+  flex-direction: column;
+}
+
+#side-nav a {
+  cursor: pointer;
+  width: 100%;
+  padding: 5% 5%;
+  transition: border-left-color 0.3s ease;
+}
+
+#side-nav a:hover {
+  background-color:#7F56D9;
+}
+#side-buttons {
+  padding: 3% 3%;
+  gap: 2%;
+  width: 10%;
+  background-color: #7F56D9;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#burger-button:checked ~ .side-menu {
+  transform: translateX(0); 
 }
 
 #burger-menu {
