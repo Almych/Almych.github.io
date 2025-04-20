@@ -6,10 +6,11 @@ const y = document.getElementsByClassName("slider-dot");
 const upButton = document.getElementsByClassName("up-button")[0];
 const burgerButton = document.getElementById("burger-button");
 const body = document.body;
-const toggleButton = document.getElementsByClassName('toggle-button');
+const toggleTheme = document.getElementById("toggle-theme");
+const filterButton = document.getElementsByClassName("filter-btn");
 var savedTheme;
-let changedThemeIcon = false;
 let carouselInterval = null;
+let articles;
 
 function showSlide(index) {
   for (let i = 0; i < x.length; i++) {
@@ -44,55 +45,30 @@ function moveSlide(num) {
   startCarousel();
 }
 
-// 🌓 Apply theme from localStorage (called on page load)
 function GetTheme() {
-  const theme = localStorage.getItem("theme");
+  var theme = localStorage.getItem("theme");
   if (theme === "dark") {
-    document.body.classList.add("dark-theme");
-    changedThemeIcon = true;
-  } else {
-    document.body.classList.remove("dark-theme");
-    changedThemeIcon = false;
+    toggleTheme.checked = true;
   }
-  SetThemeButton();
+  else {
+    toggleTheme.checked = false;
+  }
 }
 
-// 🌓 Toggle and save theme (called on button click)
 function ChangeTheme() {
-  document.body.classList.toggle("dark-theme");
-
-  if (document.body.classList.contains("dark-theme")) {
+  if (toggleTheme.checked) {
     localStorage.setItem("theme", "dark");
-    changedThemeIcon = true;
   } else {
     localStorage.removeItem("theme");
-    changedThemeIcon = false;
-  }
-
-  SetThemeButton();
-}
-
-// 🔄 Sync theme toggle button icons
-function SetThemeButton() {
-  for (let i = 0; i < toggleButton.length; i++) {
-    const light = toggleButton[i].firstElementChild;
-    const dark = toggleButton[i].lastElementChild;
-
-    if (changedThemeIcon) {
-      light.style.display = "none";
-      dark.style.display = "inline";
-    } else {
-      light.style.display = "inline";
-      dark.style.display = "none";
-    }
   }
 }
+
+
 
 
 window.addEventListener('scroll', function() {
   if (window.scrollY >= 300) {
     upButton.style.display = "block";
-    // You can trigger any actions here if you reach 300px
   } else {
     upButton.style.display = "none";
   }
@@ -127,11 +103,8 @@ function SetProjects(articles) {
 
 function SetDate(days) {
   const daysInt = parseInt(days, 10);
-
   const weeks = Math.floor(daysInt / 7);
-  const remainingDays = daysInt % 7;
   const months = Math.floor(daysInt / 30);
-  const remainingDaysAfterMonths = daysInt % 30;
 
   if (months > 0) {
     return months +  " " + "months";
@@ -172,7 +145,7 @@ function closeSideMenu() {
 }
 
  async function initProjects() {
-  let articles = await fetchProjects();
+   articles = await fetchProjects();
     SetProjects(articles)
 }
 
@@ -193,10 +166,7 @@ function SetRandomProjects(articles) {
   if (articles && articles.length > 0) {
     projectContainer.innerHTML = ``;
 
-    // Shuffle articles
     const shuffled = [...articles].sort(() => Math.random() - 0.5);
-
-    // Take the first 3 unique ones
     const selected = shuffled.slice(0, 3);
 
     for (const article of selected) {
@@ -206,7 +176,33 @@ function SetRandomProjects(articles) {
   }
 }
 
+function filter(num, tag) {
+  let filtered = articles;
+ for(let i = 0; i < filterButton.length; i++) {
+  filterButton[i].style.textDecoration ="none";
+ }
+  filterButton[num].style.textDecoration ="underline";
+    filtered = filterByTags(filtered, tag);
+  SetProjects(filtered);
+}
+
+
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+function filterByTags(arts, tag) {
+  if (!tag) return arts; 
+  return tag ? arts.filter(art => art.tag === tag) : arts;
+}
+
+function handleFaq(event) {
+  const clickedElement = event.target;
+  const faqContent = clickedElement.closest('.faq-content');
+  const details = faqContent.querySelector('details');
+  details.open = !details.open;
+}
+
+
+
