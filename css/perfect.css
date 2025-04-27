@@ -212,6 +212,7 @@ a, h1, p {
     color:#7F56D9;
     font-size: 16px;
     font-weight: 600;
+    margin-bottom: 0;
   }
 
   #features {
@@ -466,142 +467,108 @@ a, h1, p {
   justify-content: center;
 } */
 
-
-.projects {
-  display: flex;
-  background-color: aquamarine;
+#Projects {
+  width: 100%;
+  height: 800px;
   padding: 96px 0;
-  width: 100%;
+  background-color: aqua;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-}
-.projects-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 768px;
-  background-color: #111827;
-  flex-direction: column;
-}
-.projects-subtitle {
-  color: #7C3AED;
-  font-weight: 600;
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-
-.projects-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #111827;
-  margin-bottom: 16px;
-}
-
-.projects-description {
-  font-size: 16px;
-  color: #6B7280;
-  margin-bottom: 48px;
-  max-width: 600px;
-  margin-inline: auto;
-}
-
-.projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1280px;
-  padding: 32px 32px;
   gap: 64px;
-  justify-content: center;
-  background-color: #5B21B6;
 }
 
-.project-card {
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  text-align: left;
-  max-width: 360px;
-  flex: 1 1 300px;
+#projects-head {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  width: 768px;
+  gap: 15px;
+}
+#project-container {
+  display: flex;
+  width: 1216px;
+  justify-content: space-around;
+  gap: 64px;
 }
 
-.project-image {
+#Project-bar {
+  display: flex;
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  max-height:1932px;
+  justify-content: center;
 }
 
-.project-content {
-  padding: 20px;
+#projects-container {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.project-details p {
+  font-size: 16px;
+  padding: 5px 0;
+}
+.project-box {
+  padding: 12px 0;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.project-category {
-  font-size: 14px;
-  color: #7C3AED;
-  font-weight: 600;
-  margin-bottom: 8px;
+.project-box img {
+  height: 240px;
+  width: 100%;
+  border-radius: 4%;
 }
 
-.project-name {
-  font-size: 20px;
-  font-weight: 700;
-  color: #111827;
+.project-type {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
+  width: 100%;
+}
+.project-type  h1 {
+  font-size: 24px;
+  color: #000000;
+}
+.project-type img {
+  max-width: 24px;
+  height: auto;
 }
 
-.project-link-icon {
-  font-size: 18px;
-}
-
-.project-description {
-  font-size: 16px;
-  color: #4B5563;
-  margin-bottom: 16px;
-}
-
-.project-meta {
-  font-size: 14px;
-  color: #6B7280;
-  margin-bottom: 4px;
-}
-
-.project-date {
-  font-size: 14px;
-  color: #9CA3AF;
-}
-
-.projects-button {
-  padding-top: 50px;
+#view-projects {
+  background-color: #53389E;
   display: flex;
-  align-items: center;
+  border-radius: 8%;
+  justify-content: center;
+}
+ 
+.projects-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #111827;
 }
 
-.view-all-btn {
-  background: #7C3AED;
-  color: #fff;
-  padding: 12px 18px;
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
+.projects-description {
+  font-size: 20px;
+  color: #6B7280;
+  padding: 0 10px;
 }
 
-.view-all-btn:hover {
-  background: #5B21B6;
+.main-button {
+  padding: 15px 25px;
+  font-size: 16px;
 }
-                
+
 #faq {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 90px 32px;
-  gap: 64px;
-  background-color: #F9FAFB;
+  padding: 96px 32px;
+  gap:64px;
+  max-height: 878px;
 }
 
 #faq-container {
@@ -609,23 +576,22 @@ a, h1, p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 48px; /* more breathing room */
+  gap: 32px; /* more breathing room */
 }
 
 .faq-header {
+  width: 768px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
   gap: 16px;
 }
 
 .faq-title-main {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 700;
   color: #111827;
   line-height: 1.25; /* 45px in Figma */
-  margin: 0;
 }
 
 .faq-subtitle {
@@ -633,7 +599,6 @@ a, h1, p {
   font-weight: 400;
   color: #6B7280;
   line-height: 1.6;
-  margin: 0;
 }
 
 .faq-guestions {
@@ -648,12 +613,27 @@ a, h1, p {
   gap: 24px;
 }
 
+
 .faq-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   cursor: pointer;
 }
+
+.faq-desc {
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 1.6;
+  max-height: 0; /* Ensure the description is hidden initially */
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; /* Smooth transition */
+}
+
+details[open] .faq-desc {
+  max-height: 1000px; /* Set a large enough max-height to allow the content to expand */
+}
+
 
 details {
   width: 100%;
@@ -677,12 +657,6 @@ details > summary {
   line-height: 1.4;
 }
 
-.faq-desc {
-  font-size: 16px;
-  color: #6B7280;
-  line-height: 1.6;
-  margin-top: 16px;
-}
 
 .faq-status {
   display: flex;
@@ -722,9 +696,100 @@ details[open] ~ .faq-status .minus-icon {
 }
 
 #Contacts {
+  background-color:#4d15e7;
   display: flex;
   flex-direction: column;
   padding: 96px 32px;
   gap: 64px;
+  max-height: 878px;
+}
+
+#contact-head {
+  height: 130px;
+  width: 1280px;
+  padding: 0 32px;
+  background-color: #111827;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#contact-title {
+  height: 130px;
+  max-width: 768px;
+  background-color: #53389E;
+  display: flex;
+  gap:32px;
+  padding: 0 32px;
+  flex-direction: column;
+}
+
+#contact-heading {
+ padding: 0 16px;
+}
+
+.contact-desc {
+  font-size: 20px;
+  color: #4B5563;
+}
+
+#contact-container {
+  display: flex;
+  width: 1280px;
+  background-color: aqua;
   justify-content: center;
+  gap: 8px;
+}
+
+
+.contact-box {
+  padding: 32px;
+  flex: 25;
+  background-color: #616263;
+  display: flex;
+flex-direction: column;
+gap:60px;
+width: 280px;
+height: 290px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.contact-box img {
+  width: 56px;
+}
+
+.copyright {
+  align-items: center;
+  display: flex;
+  padding:64px 0;
+  gap: 64px;
+  flex-direction: column;
+  background-color:#53389E;
+}
+
+.copyright-info {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright hr {
+  width: 90%;
+}
+
+.copyright-text {
+  padding: 0 48px;
+  flex: 1;
+}
+
+.copyright-buttons {
+  padding: 0 32px;
+  display: flex;
+  gap: 24px;
 }
